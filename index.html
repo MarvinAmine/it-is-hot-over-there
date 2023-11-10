@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+    <style>
+        /* Add your CSS here, for example: */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: calc(100% - 22px);
+            box-sizing: border-box;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        tbody tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchTable()">
+</div>
+
+<table id="dataTable" class="table">
+    <thead>
+        <tr>
+            <th id="city">City</th>
+            <th id="country">Country</th>
+            <th id="crimeIndex">Crime Index</th>
+            <th id="tempInDegrees">Temperature (°C / °F)</th>
+            <th id="isCountryCrimeIndex">Country Index Used</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Table rows will be added here dynamically -->
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
