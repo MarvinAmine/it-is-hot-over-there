@@ -21,6 +21,7 @@ function populateTable(data) {
         row.insertCell(1).textContent = item.country;
         row.insertCell(2).textContent = item.crimeIndex + (item.isCountryCrimeIndex ? ' (Country Index)' : '');
         row.insertCell(3).textContent = item.tempInDegrees;
+        row.insertCell(3).textContent = item.airbnbAveragePricePerNight;
         row.insertCell(4).textContent = item.isCountryCrimeIndex ? 'Yes' : 'No';
     });
 }
