@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     fetch('https://raw.githubusercontent.com/MarvinAmine/it-is-hot-over-there/master/dataArray.json')
         .then(response => response.json())
-        .then(data => populateTable(data))
+        .then(data => {
+            window.dataArray = data; // Store the data in a global variable
+            populateTable(data);
+        })
         .catch(error => console.error('Error fetching data: ', error));
 });
 
-// This will keep track of the current sort state
 let currentSort = {
     field: '',
     order: ''
@@ -13,8 +15,8 @@ let currentSort = {
 
 function populateTable(data) {
     const tableBody = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
-    tableBody.innerHTML = ''; // Clear the table body
-    
+    tableBody.innerHTML = '';
+
     data.forEach(item => {
         let row = tableBody.insertRow();
         row.insertCell(0).textContent = item.city;
@@ -26,20 +28,16 @@ function populateTable(data) {
     });
 }
 
-// Add event listeners to headers for sorting
 document.querySelectorAll('#dataTable th').forEach(header => {
     header.addEventListener('click', () => {
-        const field = header.getAttribute('id'); // Use the id attribute to identify the sort field
-        sortTable(field);
+        sortTable(header.getAttribute('id'));
     });
 });
 
 function sortTable(sortField) {
-    // If the same field was sorted, reverse the order
     if (currentSort.field === sortField) {
         currentSort.order = currentSort.order === 'asc' ? 'desc' : 'asc';
     } else {
-        // If a new field is being sorted, start with ascending order
         currentSort.field = sortField;
         currentSort.order = 'asc';
     }
@@ -47,29 +45,27 @@ function sortTable(sortField) {
     const sortedData = dataArray.sort((a, b) => {
         let valA = a[sortField];
         let valB = b[sortField];
-        
-        // Handle if the crimeIndex is 'N/A' or contains additional text
-        if (sortField === 'crimeIndex') {
-        valA = valA === 'N/A' ? (currentSort.order === 'asc' ? -Infinity : Infinity) : parseFloat(valA);
-        valB = valB === 'N/A' ? (currentSort.order === 'asc' ? -Infinity : Infinity) : parseFloat(valB);
+
+        if (sortField === 'crimeIndex' || sortField === 'airbnbAveragePricePerNight') {
+            valA = parseFloat(valA);
+            valB = parseFloat(valB);
         }
 
-        // For boolean values, convert 'Yes'/'No' to numbers for sorting
         if (sortField === 'isCountryCrimeIndex') {
-        valA = valA === 'Yes' ? 1 : 0;
-        valB = valB === 'Yes' ? 1 : 0;
+            valA = valA === true ? 1 : 0;
+            valB = valB === true ? 1 : 0;
         }
         
         if (valA < valB) {
-        return currentSort.order === 'asc' ? -1 : 1;
+            return currentSort.order === 'asc' ? -1 : 1;
         }
         if (valA > valB) {
-        return currentSort.order === 'asc' ? 1 : -1;
+            return currentSort.order === 'asc' ? 1 : -1;
         }
         return 0;
     });
     
-    populateTable(sortedData); // Re-render the table with the sorted data
+    populateTable(sortedData);
 }
 function searchTable() {
     let input, filter, table, tr, txtValue;

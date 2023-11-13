@@ -210,7 +210,7 @@
         "crimeIndex": "57.40",
         "isCountryCrimeIndex": true,
         "tempInDegrees": "26(79)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "14"
     },
     {
         "city": "Bouaké",
@@ -218,21 +218,21 @@
         "crimeIndex": "57.40",
         "isCountryCrimeIndex": true,
         "tempInDegrees": "26(79)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "20"
     },
     {
         "city": "Abidjan",
         "country": "Ivory Coast",
         "crimeIndex": "57.30",
         "tempInDegrees": "27(81)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "111"
     },
     {
         "city": "Mombasa",
         "country": "Kenya",
         "crimeIndex": "64.67",
         "tempInDegrees": "26.9(80.4)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "82"
     },
     {
         "city": "Garissa",
@@ -240,7 +240,7 @@
         "crimeIndex": "56.98",
         "isCountryCrimeIndex": true,
         "tempInDegrees": "29.9(85.8)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "73"
     },
     {
         "city": "Lodwar",
@@ -248,7 +248,7 @@
         "crimeIndex": "56.98",
         "isCountryCrimeIndex": true,
         "tempInDegrees": "29.1(84.4)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "23"
     },
     {
         "city": "Antsiranana",
@@ -256,7 +256,7 @@
         "crimeIndex": "61.04",
         "isCountryCrimeIndex": true,
         "tempInDegrees": "26.3(79.3)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "114"
     },
     {
         "city": "Mahajanga",
@@ -264,7 +264,7 @@
         "crimeIndex": "61.04",
         "isCountryCrimeIndex": true,
         "tempInDegrees": "27.7(81.9)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "33"
     },
     {
         "city": "Toliara",
@@ -272,14 +272,14 @@
         "crimeIndex": "61.04",
         "isCountryCrimeIndex": true,
         "tempInDegrees": "25.3(77.5)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "30"
     },
     {
         "city": "Karonga",
         "country": "Malawi",
         "crimeIndex": "58.60",
         "tempInDegrees": "27.0(80.6)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "21"
     },
     {
         "city": "Ségou",
@@ -287,7 +287,7 @@
         "crimeIndex": "58.60",
         "isCountryCrimeIndex": true,
         "tempInDegrees": "27(81)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "27"
     },
     {
         "city": "Timbuktu",
@@ -295,35 +295,35 @@
         "crimeIndex": "58.60",
         "isCountryCrimeIndex": true,
         "tempInDegrees": "26(79)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "25"
     },
     {
         "city": "Bamako",
         "country": "Mali",
         "crimeIndex": "49.59",
         "tempInDegrees": "26.5(79.7)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "27"
     },
     {
         "city": "Nouakchott",
         "country": "Mauritania",
         "crimeIndex": "39.17",
         "tempInDegrees": "25.8(78.4)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "28"
     },
     {
         "city": "Niamey",
         "country": "Niger",
         "crimeIndex": "72.53",
         "tempInDegrees": "27.9(82.2)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "21"
     },
     {
         "city": "Lagos",
         "country": "Nigeria",
         "crimeIndex": "67.5",
         "tempInDegrees": "27.2(81.0)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "51"
     },
     {
         "city": "Makurdi",
@@ -331,7 +331,7 @@
         "crimeIndex": "65.99",
         "isCountryCrimeIndex": true,
         "tempInDegrees": "26.1(79.0)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "32"
     },
     {
         "city": "Sokoto",
@@ -339,14 +339,14 @@
         "crimeIndex": "65.99",
         "isCountryCrimeIndex": true,
         "tempInDegrees": "27(81)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "26"
     },
     {
         "city": "Brazzaville",
         "country": "Republic of the Congo",
         "crimeIndex": "50.00",
         "tempInDegrees": "26(79)",
-        "airbnbAveragePricePerNight": ""
+        "airbnbAveragePricePerNight": "80"
     },
     {
         "city": "Pointe-Noire",
