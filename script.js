@@ -23,7 +23,7 @@ function populateTable(data) {
         row.insertCell(1).textContent = item.country;
         row.insertCell(2).textContent = item.crimeIndex + (item.isCountryCrimeIndex ? ' (Country Index)' : '');
         row.insertCell(3).textContent = item.tempInDegrees;
-        row.insertCell(4).textContent = item.airbnbAveragePricePerNight;
+        row.insertCell(4).textContent = item.airbnbAveragePricePerNight === "" ? "Not Available" : item.airbnbAveragePricePerNight;
         row.insertCell(5).textContent = item.isCountryCrimeIndex ? 'Yes' : 'No';
     });
 }
@@ -47,8 +47,8 @@ function sortTable(sortField) {
         let valB = b[sortField];
 
         if (sortField === 'crimeIndex' || sortField === 'airbnbAveragePricePerNight') {
-            valA = parseFloat(valA);
-            valB = parseFloat(valB);
+            valA = valA === "" ? (currentSort.order === 'asc' ? Infinity : -Infinity) : parseFloat(valA);
+            valB = valB === "" ? (currentSort.order === 'asc' ? Infinity : -Infinity) : parseFloat(valB);
         }
 
         if (sortField === 'isCountryCrimeIndex') {
@@ -57,16 +57,21 @@ function sortTable(sortField) {
         }
         
         if (valA < valB) {
-            return currentSort.order === 'asc' ? -1 : 1;
+            return -1;
         }
         if (valA > valB) {
-            return currentSort.order === 'asc' ? 1 : -1;
+            return 1;
         }
         return 0;
     });
+
+    if (currentSort.order === 'desc') {
+        sortedData.reverse();
+    }
     
     populateTable(sortedData);
 }
+
 function searchTable() {
     let input, filter, table, tr, txtValue;
     input = document.getElementById('searchInput');
