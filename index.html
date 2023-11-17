@@ -41,7 +41,11 @@
     </style>
 </head>
 <body>
-
+<div>
+    <input type="text" id="userCity" placeholder="Your City">
+    <input type="text" id="userCountry" placeholder="Your Country">
+    <button onclick="updateDistances()">Calculate Distances</button>
+</div>
 <div>
     <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchTable()">
 </div>
@@ -49,12 +53,15 @@
 <table id="dataTable" class="table">
     <thead>
         <tr>
+            <th id="rank">Rank</th>
             <th id="city">City</th>
             <th id="country">Country</th>
             <th id="crimeIndex">Crime Index</th>
             <th id="tempInDegrees">Temperature (°C / °F)</th>
             <th id="airbnbAveragePricePerNight">Airbnb Price (USD/Night)</th>
             <th id="isCountryCrimeIndex">Country Index Used</th>
+            <th id="distance">Distance (km)</th>
+            <th id="airplaneTicketPrice">Estimated Airplane Ticket Price</th>
         </tr>
     </thead>
     <tbody>
