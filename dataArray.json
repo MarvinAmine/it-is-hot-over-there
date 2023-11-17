@@ -4,14 +4,18 @@
     "country": "Angola",
     "crimeIndex": "66.70",
     "tempInDegrees": "26.7(80.1)",
-    "airbnbAveragePricePerNight": "72.18"
+    "airbnbAveragePricePerNight": "72.18",
+    "latitude": "-8.8383",
+    "longitude": "13.2344"
   },
   {
     "city": "Cotonou",
     "country": "Benin",
     "crimeIndex": "31.66",
     "tempInDegrees": "27.6(81.7)",
-    "airbnbAveragePricePerNight": "37.35"
+    "airbnbAveragePricePerNight": "37.35",
+    "latitude": "6.3667",
+    "longitude": "2.4333"
   },
   {
     "city": "Parakou",
@@ -19,7 +23,9 @@
     "crimeIndex": "57.42",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "26.6(79.9)",
-    "airbnbAveragePricePerNight": "66.46"
+    "airbnbAveragePricePerNight": "66.46",
+    "latitude": "9.3500",
+    "longitude": "2.6167"
   },
   {
     "city": "Kandi",
@@ -27,7 +33,9 @@
     "crimeIndex": "31.66",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "26.5(79.7)",
-    "airbnbAveragePricePerNight": "39.00"
+    "airbnbAveragePricePerNight": "39.00",
+    "latitude": "11.1286",
+    "longitude": "2.9369"
   },
   {
     "city": "Maun",
@@ -35,7 +43,9 @@
     "crimeIndex": "52.22",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "26.4(79.5)",
-    "airbnbAveragePricePerNight": "72.89"
+    "airbnbAveragePricePerNight": "72.89",
+    "latitude": "-19.9833",
+    "longitude": "23.4167"
   },
   {
     "city": "Ghanzi",
@@ -43,21 +53,27 @@
     "crimeIndex": "52.22",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "25.7(78.3)",
-    "airbnbAveragePricePerNight": "177.06"
+    "airbnbAveragePricePerNight": "177.06",
+    "latitude": "-21.7000",
+    "longitude": "21.6500"
   },
   {
     "city": "Ouagadougou",
     "country": "Burkina Faso",
     "crimeIndex": "43.85",
     "tempInDegrees": "27.7(81.9)",
-    "airbnbAveragePricePerNight": "13.26"
+    "airbnbAveragePricePerNight": "13.26",
+    "latitude": "12.3686",
+    "longitude": "-1.5275"
   },
   {
     "city": "Ouahigouya",
     "country": "Burkina Faso",
     "crimeIndex": "49.43",
     "tempInDegrees": "27.4(81.3)",
-    "airbnbAveragePricePerNight": "56.62"
+    "airbnbAveragePricePerNight": "56.62",
+    "latitude": "13.5833",
+    "longitude": "-2.4167"
   },
   {
     "city": "Garoua",
@@ -65,35 +81,45 @@
     "crimeIndex": "63.63",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "27.3(81.1)",
-    "airbnbAveragePricePerNight": "87.36"
+    "airbnbAveragePricePerNight": "87.36",
+    "latitude": "9.3000",
+    "longitude": "13.4000"
   },
   {
     "city": "Douala",
     "country": "Cameroon",
     "crimeIndex": "70.26",
     "tempInDegrees": "26.9(80.4)",
-    "airbnbAveragePricePerNight": "96.53"
+    "airbnbAveragePricePerNight": "96.53",
+    "latitude": "4.0500",
+    "longitude": "9.7000"
   },
   {
     "city": "Praia",
     "country": "Cape Verde",
     "crimeIndex": "51.49",
     "tempInDegrees": "25.4(77.7)",
-    "airbnbAveragePricePerNight": "56.25"
+    "airbnbAveragePricePerNight": "56.25",
+    "latitude": "-11.3500",
+    "longitude": "40.3333"
   },
   {
     "city": "Bangui",
     "country": "Central African Republic",
     "crimeIndex": "81.91",
     "tempInDegrees": "25.7(78.3)",
-    "airbnbAveragePricePerNight": "105.58"
+    "airbnbAveragePricePerNight": "105.58",
+    "latitude": "4.3733",
+    "longitude": "18.5628"
   },
   {
     "city": "N'Djamena",
     "country": "Chad",
     "crimeIndex": "67.75",
     "tempInDegrees": "27.3(81.1)",
-    "airbnbAveragePricePerNight": "166.14"
+    "airbnbAveragePricePerNight": "166.14",
+    "latitude": "12.1100",
+    "longitude": "15.0500"
   },
   {
     "city": "Abéché",
@@ -101,35 +127,45 @@
     "crimeIndex": "75.89",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "28.5(83.3)",
-    "airbnbAveragePricePerNight": ""
+    "airbnbAveragePricePerNight": "",
+    "latitude": "13.8331",
+    "longitude": "20.8347"
   },
   {
     "city": "Kinshasa",
     "country": "Democratic Republic of the Congo",
     "crimeIndex": "71.80",
     "tempInDegrees": "25.9(78.6)",
-    "airbnbAveragePricePerNight": "79.52"
+    "airbnbAveragePricePerNight": "79.52",
+    "latitude": "-1.6794",
+    "longitude": "29.2336"
   },
   {
     "city": "Djibouti",
     "country": "Djibouti",
     "crimeIndex": "42.29",
     "tempInDegrees": "26.9(80.4)",
-    "airbnbAveragePricePerNight": "207.37"
+    "airbnbAveragePricePerNight": "207.37",
+    "latitude": "11.5883",
+    "longitude": "43.1450"
   },
   {
     "city": "Bata",
     "country": "Equatorial Guinea",
     "crimeIndex": "57.21",
     "tempInDegrees": "25.2(77.4)",
-    "airbnbAveragePricePerNight": "91.15"
+    "airbnbAveragePricePerNight": "91.15",
+    "latitude": "1.8650",
+    "longitude": "9.7700"
   },
   {
     "city": "Malabo",
     "country": "Equatorial Guinea",
     "crimeIndex": "32.68",
     "tempInDegrees": "26.1(79.0)",
-    "airbnbAveragePricePerNight": "65.29"
+    "airbnbAveragePricePerNight": "65.29",
+    "latitude": "3.7500",
+    "longitude": "8.7833"
   },
   {
     "city": "Assab",
@@ -137,14 +173,18 @@
     "crimeIndex": "30.70",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "28.8(83.8)",
-    "airbnbAveragePricePerNight": ""
+    "airbnbAveragePricePerNight": "",
+    "latitude": "13.0167",
+    "longitude": "42.7333"
   },
   {
     "city": "Libreville",
     "country": "Gabon",
     "crimeIndex": "53.65",
     "tempInDegrees": "25.9(78.6)",
-    "airbnbAveragePricePerNight": "96.77"
+    "airbnbAveragePricePerNight": "96.77",
+    "latitude": "0.3903",
+    "longitude": "9.4542"
   },
   {
     "city": "Port-Gentil",
@@ -152,42 +192,54 @@
     "crimeIndex": "56.25",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "26.1(79.0)",
-    "airbnbAveragePricePerNight": "96.02"
+    "airbnbAveragePricePerNight": "96.02",
+    "latitude": "-0.7167",
+    "longitude": "8.7833"
   },
   {
     "city": "Banjul",
     "country": "The Gambia",
     "crimeIndex": "43.78",
     "tempInDegrees": "26(79)",
-    "airbnbAveragePricePerNight": "61.95"
+    "airbnbAveragePricePerNight": "61.95",
+    "latitude": "13.4531",
+    "longitude": "-16.5775"
   },
   {
     "city": "Accra",
     "country": "Ghana",
     "crimeIndex": "44.17",
     "tempInDegrees": "27.0(80.6)",
-    "airbnbAveragePricePerNight": "63.87"
+    "airbnbAveragePricePerNight": "63.87",
+    "latitude": "5.5500",
+    "longitude": "-0.2000"
   },
   {
     "city": "Tamale",
     "country": "Ghana",
     "crimeIndex": "44.16",
     "tempInDegrees": "28.2(82.8)",
-    "airbnbAveragePricePerNight": "74.39"
+    "airbnbAveragePricePerNight": "74.39",
+    "latitude": "9.4075",
+    "longitude": "-0.8533"
   },
   {
     "city": "Kumasi",
     "country": "Ghana",
     "crimeIndex": "38.26",
     "tempInDegrees": "26(79)",
-    "airbnbAveragePricePerNight": "78.45"
+    "airbnbAveragePricePerNight": "78.45",
+    "latitude": "6.6667",
+    "longitude": "-1.6167"
   },
   {
     "city": "Conakry",
     "country": "Guinea",
     "crimeIndex": "58.76",
     "tempInDegrees": "27.0(80.6)",
-    "airbnbAveragePricePerNight": "65.62"
+    "airbnbAveragePricePerNight": "65.62",
+    "latitude": "9.5092",
+    "longitude": "-13.7122"
   },
   {
     "city": "Kankan",
@@ -195,14 +247,18 @@
     "crimeIndex": "44.16",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "27.0(80.6)",
-    "airbnbAveragePricePerNight": "69.42"
+    "airbnbAveragePricePerNight": "69.42",
+    "latitude": "10.3833",
+    "longitude": "-9.3000"
   },
   {
     "city": "Bissau",
     "country": "Guinea-Bissau",
     "crimeIndex": "51.82",
     "tempInDegrees": "27(81)",
-    "airbnbAveragePricePerNight": "55.38"
+    "airbnbAveragePricePerNight": "55.38",
+    "latitude": "11.8500",
+    "longitude": "-15.5667"
   },
   {
     "city": "Gagnoa",
@@ -210,7 +266,9 @@
     "crimeIndex": "57.40",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "26(79)",
-    "airbnbAveragePricePerNight": "435.97"
+    "airbnbAveragePricePerNight": "435.97",
+    "latitude": "6.1333",
+    "longitude": "-5.9333"
   },
   {
     "city": "Bouaké",
@@ -218,21 +276,27 @@
     "crimeIndex": "57.40",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "26(79)",
-    "airbnbAveragePricePerNight": "71.41"
+    "airbnbAveragePricePerNight": "71.41",
+    "latitude": "7.6833",
+    "longitude": "-5.0167"
   },
   {
     "city": "Abidjan",
     "country": "Ivory Coast",
     "crimeIndex": "57.30",
     "tempInDegrees": "27(81)",
-    "airbnbAveragePricePerNight": "83.82"
+    "airbnbAveragePricePerNight": "83.82",
+    "latitude": "5.5167",
+    "longitude": "-3.9333"
   },
   {
     "city": "Mombasa",
     "country": "Kenya",
     "crimeIndex": "64.67",
     "tempInDegrees": "26.9(80.4)",
-    "airbnbAveragePricePerNight": "46.34"
+    "airbnbAveragePricePerNight": "46.34",
+    "latitude": "-4.0500",
+    "longitude": "39.6667"
   },
   {
     "city": "Garissa",
@@ -240,7 +304,9 @@
     "crimeIndex": "56.98",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "29.9(85.8)",
-    "airbnbAveragePricePerNight": "42.90"
+    "airbnbAveragePricePerNight": "42.90",
+    "latitude": "-0.4569",
+    "longitude": "39.6583"
   },
   {
     "city": "Lodwar",
@@ -248,7 +314,9 @@
     "crimeIndex": "56.98",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "29.1(84.4)",
-    "airbnbAveragePricePerNight": "46.33"
+    "airbnbAveragePricePerNight": "46.33",
+    "latitude": "3.1167",
+    "longitude": "35.6000"
   },
   {
     "city": "Antsiranana",
@@ -256,7 +324,9 @@
     "crimeIndex": "61.04",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "26.3(79.3)",
-    "airbnbAveragePricePerNight": "63.98"
+    "airbnbAveragePricePerNight": "63.98",
+    "latitude": "-12.3000",
+    "longitude": "49.2833"
   },
   {
     "city": "Mahajanga",
@@ -264,7 +334,9 @@
     "crimeIndex": "61.04",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "27.7(81.9)",
-    "airbnbAveragePricePerNight": "84.97"
+    "airbnbAveragePricePerNight": "84.97",
+    "latitude": "-15.7167",
+    "longitude": "46.3167"
   },
   {
     "city": "Toliara",
@@ -272,14 +344,18 @@
     "crimeIndex": "61.04",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "25.3(77.5)",
-    "airbnbAveragePricePerNight": "58.52"
+    "airbnbAveragePricePerNight": "58.52",
+    "latitude": "-23.3500",
+    "longitude": "43.6667"
   },
   {
     "city": "Karonga",
     "country": "Malawi",
     "crimeIndex": "58.60",
     "tempInDegrees": "27.0(80.6)",
-    "airbnbAveragePricePerNight": "35.41"
+    "airbnbAveragePricePerNight": "35.41",
+    "latitude": "-9.9333",
+    "longitude": "33.9333"
   },
   {
     "city": "Ségou",
@@ -287,7 +363,9 @@
     "crimeIndex": "58.60",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "27(81)",
-    "airbnbAveragePricePerNight": "31.98"
+    "airbnbAveragePricePerNight": "31.98",
+    "latitude": "13.4500",
+    "longitude": "-6.2667"
   },
   {
     "city": "Timbuktu",
@@ -295,35 +373,45 @@
     "crimeIndex": "58.60",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "26(79)",
-    "airbnbAveragePricePerNight": "19.50"
+    "airbnbAveragePricePerNight": "19.50",
+    "latitude": "16.7733",
+    "longitude": "-2.9994"
   },
   {
     "city": "Bamako",
     "country": "Mali",
     "crimeIndex": "49.59",
     "tempInDegrees": "26.5(79.7)",
-    "airbnbAveragePricePerNight": "69.03"
+    "airbnbAveragePricePerNight": "69.03",
+    "latitude": "12.6458",
+    "longitude": "-7.9922"
   },
   {
     "city": "Nouakchott",
     "country": "Mauritania",
     "crimeIndex": "39.17",
     "tempInDegrees": "25.8(78.4)",
-    "airbnbAveragePricePerNight": "39.42"
+    "airbnbAveragePricePerNight": "39.42",
+    "latitude": "18.0858",
+    "longitude": "-15.9785"
   },
   {
     "city": "Niamey",
     "country": "Niger",
     "crimeIndex": "72.53",
     "tempInDegrees": "27.9(82.2)",
-    "airbnbAveragePricePerNight": "91.95"
+    "airbnbAveragePricePerNight": "91.95",
+    "latitude": "13.5150",
+    "longitude": "2.1175"
   },
   {
     "city": "Lagos",
     "country": "Nigeria",
     "crimeIndex": "67.5",
     "tempInDegrees": "27.2(81.0)",
-    "airbnbAveragePricePerNight": "40.23"
+    "airbnbAveragePricePerNight": "40.23",
+    "latitude": "6.4550",
+    "longitude": "3.3841"
   },
   {
     "city": "Makurdi",
@@ -331,7 +419,9 @@
     "crimeIndex": "65.99",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "26.1(79.0)",
-    "airbnbAveragePricePerNight": "90.18"
+    "airbnbAveragePricePerNight": "90.18",
+    "latitude": "7.7306",
+    "longitude": "8.5361"
   },
   {
     "city": "Sokoto",
@@ -339,14 +429,18 @@
     "crimeIndex": "65.99",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "27(81)",
-    "airbnbAveragePricePerNight": "84.77"
+    "airbnbAveragePricePerNight": "84.77",
+    "latitude": "13.0622",
+    "longitude": "5.2339"
   },
   {
     "city": "Brazzaville",
     "country": "Republic of the Congo",
     "crimeIndex": "50.00",
     "tempInDegrees": "26(79)",
-    "airbnbAveragePricePerNight": "86.42"
+    "airbnbAveragePricePerNight": "86.42",
+    "latitude": "-4.1794",
+    "longitude": "11.3731"
   },
   {
     "city": "Pointe-Noire",
@@ -354,14 +448,18 @@
     "crimeIndex": "53.97",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "26.7(80.1)",
-    "airbnbAveragePricePerNight": "92.09"
+    "airbnbAveragePricePerNight": "92.09",
+    "latitude": "-4.8000",
+    "longitude": "11.8500"
   },
   {
     "city": "Dakar",
     "country": "Senegal",
     "crimeIndex": "40.75",
     "tempInDegrees": "26(79)",
-    "airbnbAveragePricePerNight": "59.55"
+    "airbnbAveragePricePerNight": "59.55",
+    "latitude": "14.6928",
+    "longitude": "-17.4467"
   },
   {
     "city": "Thiès",
@@ -369,7 +467,9 @@
     "crimeIndex": "44.17",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "26(79)",
-    "airbnbAveragePricePerNight": "54.65"
+    "airbnbAveragePricePerNight": "54.65",
+    "latitude": "14.7833",
+    "longitude": "-16.9167"
   },
   {
     "city": "Bosaso",
@@ -377,7 +477,9 @@
     "crimeIndex": "65.96",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "25.6(78.1)",
-    "airbnbAveragePricePerNight": "98.51"
+    "airbnbAveragePricePerNight": "98.51",
+    "latitude": "11.2886",
+    "longitude": "49.1819"
   },
   {
     "city": "Mogadishu",
@@ -385,21 +487,27 @@
     "crimeIndex": "65.96",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "27.5(81.5)",
-    "airbnbAveragePricePerNight": "48.66"
+    "airbnbAveragePricePerNight": "48.66",
+    "latitude": "2.0392",
+    "longitude": "45.3419"
   },
   {
     "city": "Juba",
     "country": "South Sudan",
     "crimeIndex": "78.75",
     "tempInDegrees": "27.6(81.7)",
-    "airbnbAveragePricePerNight": "110.63"
+    "airbnbAveragePricePerNight": "110.63",
+    "latitude": "4.8500",
+    "longitude": "31.6000"
   },
   {
     "city": "Wau",
     "country": "South Sudan",
     "crimeIndex": "67.1",
     "tempInDegrees": "27.4(81.3)",
-    "airbnbAveragePricePerNight": "123.24"
+    "airbnbAveragePricePerNight": "123.24",
+    "latitude": "7.7000",
+    "longitude": "28.0000"
   },
   {
     "city": "Port Sudan",
@@ -407,21 +515,27 @@
     "crimeIndex": "45.93",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "27.3(81.1)",
-    "airbnbAveragePricePerNight": ""
+    "airbnbAveragePricePerNight": "",
+    "latitude": "19.6167",
+    "longitude": "37.2167"
   },
   {
     "city": "Khartoum",
     "country": "Sudan",
     "crimeIndex": "39.48",
     "tempInDegrees": "28.1(82.6)",
-    "airbnbAveragePricePerNight": "40.62"
+    "airbnbAveragePricePerNight": "40.62",
+    "latitude": "15.5006",
+    "longitude": "32.5600"
   },
   {
     "city": "Dar es Salaam",
     "country": "Tanzania",
     "crimeIndex": "57.53",
     "tempInDegrees": "26.3(79.3)",
-    "airbnbAveragePricePerNight": "64.22"
+    "airbnbAveragePricePerNight": "64.22",
+    "latitude": "-6.8161",
+    "longitude": "39.2803"
   },
   {
     "city": "Zanzibar City",
@@ -429,14 +543,18 @@
     "crimeIndex": "54.90",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "27(81)",
-    "airbnbAveragePricePerNight": "70.76"
+    "airbnbAveragePricePerNight": "70.76",
+    "latitude": "-6.1650",
+    "longitude": "39.1990"
   },
   {
     "city": "Dodoma",
     "country": "Tanzania",
     "crimeIndex": "51.84",
     "tempInDegrees": "25.1(77.2)",
-    "airbnbAveragePricePerNight": "41.57"
+    "airbnbAveragePricePerNight": "41.57",
+    "latitude": "-6.1731",
+    "longitude": "35.7419"
   },
   {
     "city": "Lomé",
@@ -444,14 +562,18 @@
     "crimeIndex": "45.77",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "27.3(81.1)",
-    "airbnbAveragePricePerNight": "39.83"
+    "airbnbAveragePricePerNight": "39.83",
+    "latitude": "6.1319",
+    "longitude": "1.2228"
   },
   {
     "city": "Mango",
     "country": "Togo",
     "crimeIndex": "26.1",
     "tempInDegrees": "27.9(82.2)",
-    "airbnbAveragePricePerNight": "26.52"
+    "airbnbAveragePricePerNight": "26.52",
+    "latitude": "10.3556",
+    "longitude": "0.4756"
   },
   {
     "city": "Livingstone",
@@ -459,63 +581,81 @@
     "crimeIndex": "43.06",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "25.1(77.2)",
-    "airbnbAveragePricePerNight": "77.94"
+    "airbnbAveragePricePerNight": "77.94",
+    "latitude": "-17.8500",
+    "longitude": "25.8667"
   },
   {
     "city": "Phnom Penh",
     "country": "Cambodia",
     "crimeIndex": "55.4",
     "tempInDegrees": "27.1(80.8)",
-    "airbnbAveragePricePerNight": "33.38"
+    "airbnbAveragePricePerNight": "33.38",
+    "latitude": "11.5694",
+    "longitude": "104.9211"
   },
   {
     "city": "Dili",
     "country": "East Timor",
     "crimeIndex": "42.07",
     "tempInDegrees": "27.2(81.0)",
-    "airbnbAveragePricePerNight": "67.95"
+    "airbnbAveragePricePerNight": "67.95",
+    "latitude": "-8.5536",
+    "longitude": "125.5783"
   },
   {
     "city": "Mumbai",
     "country": "India",
     "crimeIndex": "45.09",
     "tempInDegrees": "27.2(81.0)",
-    "airbnbAveragePricePerNight": "52.05"
+    "airbnbAveragePricePerNight": "52.05",
+    "latitude": "19.0761",
+    "longitude": "72.8775"
   },
   {
     "city": "Jakarta",
     "country": "Indonesia",
     "crimeIndex": "52.7",
     "tempInDegrees": "27.0(80.6)",
-    "airbnbAveragePricePerNight": "31.86"
+    "airbnbAveragePricePerNight": "31.86",
+    "latitude": "-6.1750",
+    "longitude": "106.8275"
   },
   {
     "city": "Jayapura",
     "country": "Indonesia",
     "crimeIndex": "48.53",
     "tempInDegrees": "27.3(81.1)",
-    "airbnbAveragePricePerNight": "44.85"
+    "airbnbAveragePricePerNight": "44.85",
+    "latitude": "-2.5330",
+    "longitude": "140.7170"
   },
   {
     "city": "Makassar",
     "country": "Indonesia",
     "crimeIndex": "51.67",
     "tempInDegrees": "27.7(81.9)",
-    "airbnbAveragePricePerNight": "51.36"
+    "airbnbAveragePricePerNight": "51.36",
+    "latitude": "-5.1619",
+    "longitude": "119.4362"
   },
   {
     "city": "Medan",
     "country": "Indonesia",
     "crimeIndex": "54.39",
     "tempInDegrees": "26.0(78.8)",
-    "airbnbAveragePricePerNight": "68.09"
+    "airbnbAveragePricePerNight": "68.09",
+    "latitude": "3.5894",
+    "longitude": "98.6739"
   },
   {
     "city": "Palembang",
     "country": "Indonesia",
     "crimeIndex": "74.02",
     "tempInDegrees": "27.4(81.3)",
-    "airbnbAveragePricePerNight": "56.55"
+    "airbnbAveragePricePerNight": "56.55",
+    "latitude": "-2.9861",
+    "longitude": "104.7556"
   },
   {
     "city": "Pontianak",
@@ -523,203 +663,261 @@
     "crimeIndex": "45.94",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "27.3(81.1)",
-    "airbnbAveragePricePerNight": "40.19"
+    "airbnbAveragePricePerNight": "40.19",
+    "latitude": "-0.0206",
+    "longitude": "109.3414"
   },
   {
     "city": "Surabaya",
     "country": "Indonesia",
     "crimeIndex": "33.19",
     "tempInDegrees": "28.3(82.9)",
-    "airbnbAveragePricePerNight": "31.83"
+    "airbnbAveragePricePerNight": "31.83",
+    "latitude": "-7.2458",
+    "longitude": "112.7378"
   },
   {
     "city": "Kuala Lumpur",
     "country": "Malaysia",
     "crimeIndex": "63.0",
     "tempInDegrees": "26.8(80.2)",
-    "airbnbAveragePricePerNight": "74.80"
+    "airbnbAveragePricePerNight": "74.80",
+    "latitude": "3.1478",
+    "longitude": "101.6953"
   },
   {
     "city": "Malé",
     "country": "Maldives",
     "crimeIndex": "63.06",
     "tempInDegrees": "27.7(81.9)",
-    "airbnbAveragePricePerNight": "89.70"
+    "airbnbAveragePricePerNight": "89.70",
+    "latitude": "4.1753",
+    "longitude": "73.5089"
   },
   {
     "city": "Mandalay",
     "country": "Myanmar",
     "crimeIndex": "66.60",
     "tempInDegrees": "25.7(78.3)",
-    "airbnbAveragePricePerNight": ""
+    "airbnbAveragePricePerNight": "",
+    "latitude": "21.9831",
+    "longitude": "96.0844"
   },
   {
     "city": "Yangon",
     "country": "Myanmar",
     "crimeIndex": "49.29",
     "tempInDegrees": "27.4(81.3)",
-    "airbnbAveragePricePerNight": ""
+    "airbnbAveragePricePerNight": "",
+    "latitude": "17.1000",
+    "longitude": "95.1833"
   },
   {
     "city": "Manila",
     "country": "Philippines",
     "crimeIndex": "65.4",
     "tempInDegrees": "28.0(82.4)",
-    "airbnbAveragePricePerNight": "52.13"
+    "airbnbAveragePricePerNight": "52.13",
+    "latitude": "14.5958",
+    "longitude": "120.9772"
   },
   {
     "city": "Singapore",
     "country": "Singapore",
     "crimeIndex": "29.2",
     "tempInDegrees": "27(81)",
-    "airbnbAveragePricePerNight": "120.65"
+    "airbnbAveragePricePerNight": "120.65",
+    "latitude": "1.3000",
+    "longitude": "103.8000"
   },
   {
     "city": "Colombo",
     "country": "Sri Lanka",
     "crimeIndex": "41.6",
     "tempInDegrees": "26.7(80.1)",
-    "airbnbAveragePricePerNight": "87.01"
+    "airbnbAveragePricePerNight": "87.01",
+    "latitude": "6.9344",
+    "longitude": "79.8428"
   },
   {
     "city": "Bangkok",
     "country": "Thailand",
     "crimeIndex": "40.5",
     "tempInDegrees": "27.8(82.0)",
-    "airbnbAveragePricePerNight": "34.36"
+    "airbnbAveragePricePerNight": "34.36",
+    "latitude": "13.7525",
+    "longitude": "100.4942"
   },
   {
     "city": "Hat Yai",
     "country": "Thailand",
     "crimeIndex": "27.21",
     "tempInDegrees": "26.0(78.8)",
-    "airbnbAveragePricePerNight": "82.37"
+    "airbnbAveragePricePerNight": "82.37",
+    "latitude": "7.0167",
+    "longitude": "100.4667"
   },
   {
     "city": "Nakhon Ratchasima",
     "country": "Thailand",
     "crimeIndex": "10.78",
     "tempInDegrees": "25.4(77.7)",
-    "airbnbAveragePricePerNight": "44.69"
+    "airbnbAveragePricePerNight": "44.69",
+    "latitude": "14.9750",
+    "longitude": "102.1000"
   },
   {
     "city": "Ho Chi Minh City",
     "country": "Vietnam",
     "crimeIndex": "52.5",
     "tempInDegrees": "26.7(80.1)",
-    "airbnbAveragePricePerNight": "27.92"
+    "airbnbAveragePricePerNight": "27.92",
+    "latitude": "10.7756",
+    "longitude": "106.7019"
   },
   {
     "city": "Aden",
     "country": "Yemen",
     "crimeIndex": "21.2",
     "tempInDegrees": "27.1(80.8)",
-    "airbnbAveragePricePerNight": "46.02"
+    "airbnbAveragePricePerNight": "46.02",
+    "latitude": "12.8000",
+    "longitude": "45.0333"
   },
   {
     "city": "St. John's",
     "country": "Antigua and Barbuda",
     "crimeIndex": "64.08",
     "tempInDegrees": "26.8(80.2)",
-    "airbnbAveragePricePerNight": "120.71"
+    "airbnbAveragePricePerNight": "120.71",
+    "latitude": "17.1167",
+    "longitude": "-61.8500"
   },
   {
     "city": "Oranjestad",
     "country": "Aruba",
     "crimeIndex": "25.36",
     "tempInDegrees": "28.1(82.6)",
-    "airbnbAveragePricePerNight": "113.86"
+    "airbnbAveragePricePerNight": "113.86",
+    "latitude": "12.5186",
+    "longitude": "-70.0358"
   },
   {
     "city": "Bridgetown",
     "country": "Barbados",
     "crimeIndex": "42.02",
     "tempInDegrees": "27.0(80.6)",
-    "airbnbAveragePricePerNight": "101.88"
+    "airbnbAveragePricePerNight": "101.88",
+    "latitude": "13.0975",
+    "longitude": "-59.6167"
   },
   {
     "city": "Belize City",
     "country": "Belize",
     "crimeIndex": "66.46",
     "tempInDegrees": "25.6(78.1)",
-    "airbnbAveragePricePerNight": "90.71"
+    "airbnbAveragePricePerNight": "90.71",
+    "latitude": "17.4986",
+    "longitude": "-88.1886"
   },
   {
     "city": "George Town",
     "country": "Cayman Islands",
     "crimeIndex": "32.45",
     "tempInDegrees": "27.5(81.5)",
-    "airbnbAveragePricePerNight": "107.05"
+    "airbnbAveragePricePerNight": "107.05",
+    "latitude": "19.2866",
+    "longitude": "-81.3744"
   },
   {
     "city": "Willemstad",
     "country": "Curaçao",
     "crimeIndex": "58.47",
     "tempInDegrees": "28.0(82.4)",
-    "airbnbAveragePricePerNight": "95.77"
+    "airbnbAveragePricePerNight": "95.77",
+    "latitude": "12.1080",
+    "longitude": "-68.9350"
   },
   {
     "city": "Roseau",
     "country": "Dominica",
     "crimeIndex": "56.25",
     "tempInDegrees": "26.2(79.2)",
-    "airbnbAveragePricePerNight": "87.87"
+    "airbnbAveragePricePerNight": "87.87",
+    "latitude": "15.3014",
+    "longitude": "-61.3883"
   },
   {
     "city": "Santo Domingo",
     "country": "Dominican Republic",
     "crimeIndex": "67.2",
     "tempInDegrees": "26.0(78.8)",
-    "airbnbAveragePricePerNight": "58.45"
+    "airbnbAveragePricePerNight": "58.45",
+    "latitude": "18.4764",
+    "longitude": "-69.8933"
   },
   {
     "city": "La Ceiba",
     "country": "Honduras",
     "crimeIndex": "75.94",
     "tempInDegrees": "25.2(77.4)",
-    "airbnbAveragePricePerNight": "87.59"
+    "airbnbAveragePricePerNight": "87.59",
+    "latitude": "15.7792",
+    "longitude": "-86.7931"
   },
   {
     "city": "Kingston",
     "country": "Jamaica",
     "crimeIndex": "70.9",
     "tempInDegrees": "27.2(81.0)",
-    "airbnbAveragePricePerNight": "146.59"
+    "airbnbAveragePricePerNight": "146.59",
+    "latitude": "17.9714",
+    "longitude": "-76.7931"
   },
   {
     "city": "Villahermosa",
     "country": "Mexico",
     "crimeIndex": "47.97",
     "tempInDegrees": "25.7(78.3)",
-    "airbnbAveragePricePerNight": "69.24"
+    "airbnbAveragePricePerNight": "69.24",
+    "latitude": "17.9892",
+    "longitude": "-92.9281"
   },
   {
     "city": "Managua",
     "country": "Nicaragua",
     "crimeIndex": "53.11",
     "tempInDegrees": "26.3(79.3)",
-    "airbnbAveragePricePerNight": "46.80"
+    "airbnbAveragePricePerNight": "46.80",
+    "latitude": "12.1544",
+    "longitude": "-86.2738"
   },
   {
     "city": "Panama City",
     "country": "Panama",
     "crimeIndex": "47.7",
     "tempInDegrees": "27(81)",
-    "airbnbAveragePricePerNight": "68.83"
+    "airbnbAveragePricePerNight": "68.83",
+    "latitude": "8.9833",
+    "longitude": "-79.5167"
   },
   {
     "city": "San Juan",
     "country": "Puerto Rico",
     "crimeIndex": "68.4",
     "tempInDegrees": "27.0(80.6)",
-    "airbnbAveragePricePerNight": "126.36"
+    "airbnbAveragePricePerNight": "126.36",
+    "latitude": "18.3985",
+    "longitude": "-66.0610"
   },
   {
     "city": "Cairns",
     "country": "Australia",
     "crimeIndex": "61.7",
     "tempInDegrees": "26(79)",
-    "airbnbAveragePricePerNight": "116.74"
+    "airbnbAveragePricePerNight": "116.74",
+    "latitude": "-16.9200",
+    "longitude": "145.7800"
   },
   {
     "city": "Dampier",
@@ -727,42 +925,54 @@
     "crimeIndex": "47.11",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "28.3(82.9)",
-    "airbnbAveragePricePerNight": "125.58"
+    "airbnbAveragePricePerNight": "125.58",
+    "latitude": "20.6624",
+    "longitude": "116.7105"
   },
   {
     "city": "Darwin",
     "country": "Australia",
     "crimeIndex": "60.4",
     "tempInDegrees": "29.3(84.7)",
-    "airbnbAveragePricePerNight": "68.35"
+    "airbnbAveragePricePerNight": "68.35",
+    "latitude": "-12.4381",
+    "longitude": "130.8411"
   },
   {
     "city": "Suva",
     "country": "Fiji",
     "crimeIndex": "54.58",
     "tempInDegrees": "26.1(79.0)",
-    "airbnbAveragePricePerNight": "127.69"
+    "airbnbAveragePricePerNight": "127.69",
+    "latitude": "-18.1416",
+    "longitude": "178.4419"
   },
   {
     "city": "Port Moresby",
     "country": "Papua New Guinea",
     "crimeIndex": "80.7",
     "tempInDegrees": "27.6(81.7)",
-    "airbnbAveragePricePerNight": "125.08"
+    "airbnbAveragePricePerNight": "125.08",
+    "latitude": "-9.4789",
+    "longitude": "147.1494"
   },
   {
     "city": "Honiara",
     "country": "Solomon Islands",
     "crimeIndex": "66.15",
     "tempInDegrees": "26.7(80.1)",
-    "airbnbAveragePricePerNight": "157.79"
+    "airbnbAveragePricePerNight": "157.79",
+    "latitude": "-9.4319",
+    "longitude": "159.9556"
   },
   {
     "city": "Honolulu",
     "country": "United States",
     "crimeIndex": "47.3",
     "tempInDegrees": "25.4(77.7)",
-    "airbnbAveragePricePerNight": "192.47"
+    "airbnbAveragePricePerNight": "192.47",
+    "latitude": "21.3294",
+    "longitude": "-157.8460"
   },
   {
     "city": "Santa Cruz de la Sierra",
@@ -770,209 +980,269 @@
     "crimeIndex": "64.49",
     "isCountryCrimeIndex": true,
     "tempInDegrees": "27.1(80.8)",
-    "airbnbAveragePricePerNight": "32.11"
+    "airbnbAveragePricePerNight": "32.11",
+    "latitude": "-17.7520",
+    "longitude": "-63.2279"
   },
   {
     "city": "Belém",
     "country": "Brazil",
     "crimeIndex": "72.94",
     "tempInDegrees": "26.5(79.7)",
-    "airbnbAveragePricePerNight": "44.55"
+    "airbnbAveragePricePerNight": "44.55",
+    "latitude": "-1.4558",
+    "longitude": "-48.5039"
   },
   {
     "city": "Fortaleza",
     "country": "Brazil",
     "crimeIndex": "77.3",
     "tempInDegrees": "27.2(81.0)",
-    "airbnbAveragePricePerNight": "40.40"
+    "airbnbAveragePricePerNight": "40.40",
+    "latitude": "-3.7275",
+    "longitude": "-38.5275"
   },
   {
     "city": "Manaus",
     "country": "Brazil",
     "crimeIndex": "70.87",
     "tempInDegrees": "27.2(81.0)",
-    "airbnbAveragePricePerNight": "52.74"
+    "airbnbAveragePricePerNight": "52.74",
+    "latitude": "-3.1000",
+    "longitude": "-60.0167"
   },
   {
     "city": "Recife",
     "country": "Brazil",
     "crimeIndex": "76.4",
     "tempInDegrees": "26.1(79.0)",
-    "airbnbAveragePricePerNight": "41.61"
+    "airbnbAveragePricePerNight": "41.61",
+    "latitude": "-8.0500",
+    "longitude": "-34.9000"
   },
   {
     "city": "Salvador",
     "country": "Brazil",
     "crimeIndex": "76.6",
     "tempInDegrees": "25.5(77.9)",
-    "airbnbAveragePricePerNight": "64.56"
+    "airbnbAveragePricePerNight": "64.56",
+    "latitude": "-12.9747",
+    "longitude": "-38.4767"
   },
   {
     "city": "Barranquilla",
     "country": "Colombia",
     "crimeIndex": "66.17",
     "tempInDegrees": "27.4(81.3)",
-    "airbnbAveragePricePerNight": "37.89"
+    "airbnbAveragePricePerNight": "37.89",
+    "latitude": "10.9833",
+    "longitude": "-74.8019"
   },
   {
     "city": "Valledupar",
     "country": "Colombia",
     "crimeIndex": "72.55",
     "tempInDegrees": "29.0(84.2)",
-    "airbnbAveragePricePerNight": "43.73"
+    "airbnbAveragePricePerNight": "43.73",
+    "latitude": "10.4833",
+    "longitude": "-73.2500"
   },
   {
     "city": "Guayaquil",
     "country": "Ecuador",
     "crimeIndex": "71.6",
     "tempInDegrees": "26.2(79.2)",
-    "airbnbAveragePricePerNight": "52.53"
+    "airbnbAveragePricePerNight": "52.53",
+    "latitude": "-2.1900",
+    "longitude": "-79.8875"
   },
   {
     "city": "Cayenne",
     "country": "French Guiana",
     "crimeIndex": "69.12",
     "tempInDegrees": "27.0(80.6)",
-    "airbnbAveragePricePerNight": "95.65"
+    "airbnbAveragePricePerNight": "95.65",
+    "latitude": "4.9330",
+    "longitude": "-52.3300"
   },
   {
     "city": "Georgetown",
     "country": "Guyana",
     "crimeIndex": "70.52",
     "tempInDegrees": "27.2(81.0)",
-    "airbnbAveragePricePerNight": "107.05"
+    "airbnbAveragePricePerNight": "107.05",
+    "latitude": "6.8058",
+    "longitude": "-58.1508"
   },
   {
     "city": "Paramaribo",
     "country": "Suriname",
     "crimeIndex": "51.36",
     "tempInDegrees": "27.3(81.1)",
-    "airbnbAveragePricePerNight": "55.62"
+    "airbnbAveragePricePerNight": "55.62",
+    "latitude": "5.8522",
+    "longitude": "-55.2039"
   },
   {
     "city": "Maracaibo",
     "country": "Venezuela",
     "crimeIndex": "81.66",
     "tempInDegrees": "28.3(82.9)",
-    "airbnbAveragePricePerNight": "51.64"
+    "airbnbAveragePricePerNight": "51.64",
+    "latitude": "10.6333",
+    "longitude": "-71.6333"
   },
   {
     "city": "Bangalore",
     "country": "India",
     "crimeIndex": "53.47",
     "tempInDegrees": "28.3(82.9)",
-    "airbnbAveragePricePerNight": "37.98"
+    "airbnbAveragePricePerNight": "37.98",
+    "latitude": "12.9789",
+    "longitude": "77.5917"
   },
   {
     "city": "Miami",
     "country": "USA",
     "crimeIndex": "53.31",
     "tempInDegrees": "25.6(78.1)",
-    "airbnbAveragePricePerNight": "86.52"
+    "airbnbAveragePricePerNight": "86.52",
+    "latitude": "25.8171",
+    "longitude": "-80.1396"
   },
   {
     "city": "Cancun",
     "country": "Mexico",
     "crimeIndex": "56.15",
     "tempInDegrees": "27.5(81.5)",
-    "airbnbAveragePricePerNight": "67.40"
+    "airbnbAveragePricePerNight": "67.40",
+    "latitude": "21.1606",
+    "longitude": "-86.8475"
   },
   {
     "city": "Cartagena",
     "country": "Colombia",
     "crimeIndex": "54.88",
     "tempInDegrees": "28.1(82.6)",
-    "airbnbAveragePricePerNight": "73.95"
+    "airbnbAveragePricePerNight": "73.95",
+    "latitude": "10.4000",
+    "longitude": "-75.5000"
   },
   {
     "city": "Bangkok",
     "country": "Thailand",
     "crimeIndex": "40.15",
     "tempInDegrees": "29.3(84.7)",
-    "airbnbAveragePricePerNight": "34.99"
+    "airbnbAveragePricePerNight": "34.99",
+    "latitude": "13.7525",
+    "longitude": "100.4942"
   },
   {
     "city": "Chennai",
     "country": "India",
     "crimeIndex": "39.75",
     "tempInDegrees": "30.4(86.7)",
-    "airbnbAveragePricePerNight": "30.52"
+    "airbnbAveragePricePerNight": "30.52",
+    "latitude": "13.0825",
+    "longitude": "80.2750"
   },
   {
     "city": "Dubai",
     "country": "United Arab Emirates",
     "crimeIndex": "16.98",
     "tempInDegrees": "31.4(88.5)",
-    "airbnbAveragePricePerNight": "54.78"
+    "airbnbAveragePricePerNight": "54.78",
+    "latitude": "25.2631",
+    "longitude": "55.2972"
   },
   {
     "city": "Freetown",
     "country": "Sierra Leone",
     "crimeIndex": "66.86",
     "tempInDegrees": "27.0(80.6)",
-    "airbnbAveragePricePerNight": "60.36"
+    "airbnbAveragePricePerNight": "60.36",
+    "latitude": "8.4844",
+    "longitude": "-13.2344"
   },
   {
     "city": "Havana",
     "country": "Cuba",
     "crimeIndex": "32.45",
     "tempInDegrees": "26.0(78.8)",
-    "airbnbAveragePricePerNight": "54.26"
+    "airbnbAveragePricePerNight": "54.26",
+    "latitude": "23.1367",
+    "longitude": "-82.3589"
   },
   {
     "city": "Izmir",
     "country": "Turkey",
     "crimeIndex": "32.21",
     "tempInDegrees": "25.6(78.1)",
-    "airbnbAveragePricePerNight": "54.16"
+    "airbnbAveragePricePerNight": "54.16",
+    "latitude": "38.4200",
+    "longitude": "27.1400"
   },
   {
     "city": "Kampala",
     "country": "Uganda",
     "crimeIndex": "55.37",
     "tempInDegrees": "22.8(73.0)",
-    "airbnbAveragePricePerNight": "48.77"
+    "airbnbAveragePricePerNight": "48.77",
+    "latitude": "0.3136",
+    "longitude": "32.5811"
   },
   {
     "city": "Kolkata",
     "country": "India",
     "crimeIndex": "46.07",
     "tempInDegrees": "29.7(85.5)",
-    "airbnbAveragePricePerNight": "29.84"
+    "airbnbAveragePricePerNight": "29.84",
+    "latitude": "22.5675",
+    "longitude": "88.3700"
   },
   {
     "city": "Lagos",
     "country": "Nigeria",
     "crimeIndex": "68.00",
     "tempInDegrees": "27.4(81.3)",
-    "airbnbAveragePricePerNight": "37.17"
+    "airbnbAveragePricePerNight": "37.17",
+    "latitude": "6.4550",
+    "longitude": "3.3841"
   },
   {
     "city": "Manila",
     "country": "Philippines",
     "crimeIndex": "64.81",
     "tempInDegrees": "28.3(82.9)",
-    "airbnbAveragePricePerNight": "47.46"
+    "airbnbAveragePricePerNight": "47.46",
+    "latitude": "14.5958",
+    "longitude": "120.9772"
   },
   {
     "city": "Monterrey",
     "country": "Mexico",
     "crimeIndex": "48.35",
     "tempInDegrees": "26.0(78.8)",
-    "airbnbAveragePricePerNight": "51.69"
+    "airbnbAveragePricePerNight": "51.69",
+    "latitude": "25.6667",
+    "longitude": "-100.3000"
   },
   {
     "city": "New Delhi",
     "country": "India",
     "crimeIndex": "59.31",
     "tempInDegrees": "31.0(87.8)",
-    "airbnbAveragePricePerNight": "46.41"
+    "airbnbAveragePricePerNight": "46.41",
+    "latitude": "28.6139",
+    "longitude": "77.2090"
   },
   {
     "city": "Rio de Janeiro",
     "country": "Brazil",
     "crimeIndex": "77.47",
     "tempInDegrees": "25.0(77.0)",
-    "airbnbAveragePricePerNight": "61.75"
+    "airbnbAveragePricePerNight": "61.75",
+    "latitude": "-22.9111",
+    "longitude": "-43.2056"
   }
 ]
