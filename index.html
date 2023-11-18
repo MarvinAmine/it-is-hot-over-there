@@ -5,21 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Table</title>
     <style>
-        /* Add your CSS here, for example: */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
-        input[type="text"] {
+        .input-group {
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+        }
+        input[type="text"], button {
             padding: 10px;
-            margin: 10px 0;
-            width: calc(100% - 22px);
-            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+        input[type="text"]:focus, button:focus {
+            border-color: #4CAF50;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #367c39;
         }
         table {
-            width: 100%;
+            width: 90%;
+            max-width: 1000px;
             border-collapse: collapse;
             margin-top: 10px;
         }
@@ -41,34 +64,34 @@
     </style>
 </head>
 <body>
-<div>
-    <input type="text" id="userCity" placeholder="Your City">
-    <input type="text" id="userCountry" placeholder="Your Country">
-    <button onclick="updateDistances()">Calculate Distances</button>
-</div>
-<div>
-    <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchTable()">
-</div>
+    <div class="input-group">
+        <input type="text" id="userCity" placeholder="Your City">
+        <input type="text" id="userCountry" placeholder="Your Country">
+        <button onclick="updateDistances()">Calculate Distances</button>
+    </div>
+    <div class="input-group">
+        <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchTable()">
+    </div>
 
-<table id="dataTable" class="table">
-    <thead>
-        <tr>
-            <th id="rank">Rank</th>
-            <th id="city">City</th>
-            <th id="country">Country</th>
-            <th id="crimeIndex">Crime Index</th>
-            <th id="tempInDegrees">Temperature (°C / °F)</th>
-            <th id="airbnbAveragePricePerNight">Airbnb Price (USD/Night)</th>
-            <th id="isCountryCrimeIndex">Country Index Used</th>
-            <th id="distance">Distance (km)</th>
-            <th id="airplaneTicketPrice">Estimated Airplane Ticket Price</th>
-        </tr>
-    </thead>
-    <tbody>
-        <!-- Table rows will be added here dynamically -->
-    </tbody>
-</table>
+    <table id="dataTable" class="table">
+        <thead>
+            <tr>
+                <th id="rank">Rank</th>
+                <th id="city">City</th>
+                <th id="country">Country</th>
+                <th id="crimeIndex">Crime Index</th>
+                <th id="tempInDegrees">Temperature (°C / °F)</th>
+                <th id="airbnbAveragePricePerNight">Airbnb Price (USD/Night)</th>
+                <th id="isCountryCrimeIndex">Country Index Used</th>
+                <th id="distance">Distance (km)</th>
+                <th id="airplaneTicketPrice">Estimated Airplane Ticket Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be added here dynamically -->
+        </tbody>
+    </table>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

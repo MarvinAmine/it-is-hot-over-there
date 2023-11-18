@@ -55,26 +55,57 @@ async function updateDistances() {
     }
 }
 
+function calculateLogarithmicTicketPrice(distance) {
+    // Coefficients for the logarithmic model
+    const a = 0.05;
+    const b = 150;
+
+    // Calculate the price using the logarithmic formula
+    // Adding a small value to distance to avoid log(0) issue
+    const price = (a * distance + b) * 0.73;
+    return price > 0 ? price : 0; // Ensure the ticket price is not negative
+}
+
 function calculateScore(item) {
     const weights = { crimeWeight: 1, airbnbWeight: 1, ticketPriceWeight: 1 }; // Adjust weights as needed
     let score = 0;
-    score += item.crimeIndex ? parseFloat(item.crimeIndex) * weights.crimeWeight : 0;
-    score += item.airbnbAveragePricePerNight ? parseFloat(item.airbnbAveragePricePerNight) * weights.airbnbWeight : 0;
-    
-    let ticketPrice = item.distance ? item.distance * 0.30 : Infinity; // Calculate ticket price if not calculated
+
+    // Adjust the crime score based on criteria
+    let crimeScore = item.crimeIndex ? parseFloat(item.crimeIndex) : 0;
+    if (crimeScore < 30) {
+        // Lower score for low crime rate
+        score -= crimeScore * weights.crimeWeight;
+    } else if (crimeScore > 55) {
+        // Higher score for high crime rate
+        score += crimeScore * weights.crimeWeight * 2;
+    } else {
+        // Neutral scoring for moderate crime rate
+        score += crimeScore * weights.crimeWeight;
+    }
+
+    // Score for Airbnb price - lower price gets lower score
+    let airbnbScore = item.airbnbAveragePricePerNight ? parseFloat(item.airbnbAveragePricePerNight) : 0;
+    score += airbnbScore * weights.airbnbWeight;
+
+    // Score for ticket price - lower price gets lower score
+    let ticketPrice = item.distance ? calculateLogarithmicTicketPrice(item.distance) : 0;
     score += ticketPrice * weights.ticketPriceWeight;
 
     return score;
 }
+
 function calculateScoresAndRanks() {
     window.dataArray.forEach(item => {
         item.score = calculateScore(item);
     });
 
-    // Sort data based on score and assign ranks
+    // Sort data based on score in ascending order (lower score is better)
     window.dataArray.sort((a, b) => a.score - b.score);
+
+    // Assign ranks based on the sorted order
     window.dataArray.forEach((item, index) => {
         item.rank = index + 1;
+        console.log(`City: ${item.city}, Score: ${item.score}, Rank: ${item.rank}`); // Debugging line
     });
 }
 
@@ -84,11 +115,10 @@ let currentSort = {
 };
 
 function populateTable(data) {
-
     const tableBody = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
     tableBody.innerHTML = '';
 
-    data.forEach((item)=> {
+    data.forEach((item) => {
         let row = tableBody.insertRow();
         row.insertCell(0).textContent = item.rank;
         row.insertCell(1).textContent = item.city;
@@ -99,13 +129,12 @@ function populateTable(data) {
         row.insertCell(6).textContent = item.isCountryCrimeIndex ? 'Yes' : 'No';
         row.insertCell(7).textContent = item.distance ? item.distance.toFixed(2) + ' km' : 'Not calculated';
 
-        // Calculate and add airplane ticket price
-        const pricePerKm = 0.25; // $0.30 per km
+        // Calculate and add airplane ticket price using the new formula
         let ticketPrice = "Not calculated";
         if (item.distance && !isNaN(item.distance)) {
-            ticketPrice = (item.distance * pricePerKm).toFixed(2) + ' USD';
+            ticketPrice = calculateLogarithmicTicketPrice(item.distance).toFixed(2) + ' USD';
         }
-        row.insertCell(7).textContent = ticketPrice;
+        row.insertCell(8).textContent = ticketPrice;
     });
 }
 
