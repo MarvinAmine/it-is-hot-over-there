@@ -11,6 +11,70 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error fetching data: ', error));
 });
+document.addEventListener('DOMContentLoaded', function() {
+    // Fetch data and initialize the table
+    fetchDataAndInitialize();
+
+    // Event listener for window resize
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Call on initial load
+});
+
+async function fetchDataAndInitialize() {
+    try {
+        const response = await fetch('https://raw.githubusercontent.com/MarvinAmine/it-is-hot-over-there/master/dataArray.json');
+        const data = await response.json();
+        window.dataArray = data;
+        calculateScoresAndRanks();
+        populateTable(window.dataArray);
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
+
+function handleResize() {
+    const isMobileView = window.innerWidth <= 600;
+    if (isMobileView) {
+        createMobileSortingOptions();
+    } else {
+        removeMobileSortingOptions();
+    }
+    populateTable(window.dataArray);
+}
+
+function createMobileSortingOptions() {
+    // Create the dropdown for sorting if it doesn't exist
+    if (!document.getElementById('sortSelect')) {
+        const inputGroup = document.createElement('div');
+        inputGroup.className = 'input-group';
+        inputGroup.innerHTML = `
+            <select id="sortSelect">
+                <option value="rank">Rank</option>
+                <option value="city">City</option>
+                <option value="country">Country</option>
+                <option value="crimeIndex">Crime Index</option>
+                <option value="tempInDegrees">Temperature</option>
+                <option value="airbnbAveragePricePerNight">Airbnb Price</option>
+                <option value="distance">Distance</option>
+            </select>
+            <button onclick="sortTableMobile()">Sort</button>
+        `;
+        document.body.insertBefore(inputGroup, document.getElementById('dataTable'));
+    }
+}
+
+function removeMobileSortingOptions() {
+    // Remove the sorting dropdown if it exists
+    const sortSelect = document.getElementById('sortSelect');
+    if (sortSelect) {
+        sortSelect.parentNode.remove();
+    }
+}
+
+function sortTableMobile() {
+    const sortField = document.getElementById('sortSelect').value;
+    sortTable(sortField);
+}
 
 async function updateDistances() {
     const userCity = document.getElementById('userCity').value;
@@ -120,23 +184,67 @@ function populateTable(data) {
 
     data.forEach((item) => {
         let row = tableBody.insertRow();
-        row.insertCell(0).textContent = item.rank;
-        row.insertCell(1).textContent = item.city;
-        row.insertCell(2).textContent = item.country;
-        row.insertCell(3).textContent = item.crimeIndex + (item.isCountryCrimeIndex ? ' (Country Index)' : '');
-        row.insertCell(4).textContent = item.tempInDegrees;
-        row.insertCell(5).textContent = item.airbnbAveragePricePerNight === "" ? "Not Available" : item.airbnbAveragePricePerNight;
-        row.insertCell(6).textContent = item.isCountryCrimeIndex ? 'Yes' : 'No';
-        row.insertCell(7).textContent = item.distance ? item.distance.toFixed(2) + ' km' : 'Not calculated';
 
-        // Calculate and add airplane ticket price using the new formula
+        // Rank
+        let cellRank = row.insertCell();
+        cellRank.setAttribute('data-label', 'Rank');
+        cellRank.className = 'col-rank';
+        cellRank.textContent = item.rank;
+
+        // City
+        let cellCity = row.insertCell();
+        cellCity.setAttribute('data-label', 'City');
+        cellCity.className = 'col-city';
+        cellCity.textContent = item.city;
+
+        // Country
+        let cellCountry = row.insertCell();
+        cellCountry.setAttribute('data-label', 'Country');
+        cellCountry.className = 'col-rank';
+        cellCountry.textContent = item.country;
+
+        // Crime Index
+        let cellCrimeIndex = row.insertCell();
+        cellCrimeIndex.setAttribute('data-label', 'Crime Index');
+        cellCrimeIndex.className = 'col-crime-index';
+        cellCrimeIndex.textContent = item.crimeIndex;
+
+        // Temperature
+        let cellTemp = row.insertCell();
+        cellTemp.setAttribute('data-label', 'Temperature (°C / °F)');
+        cellTemp.className = 'col-temperature';
+        cellTemp.textContent = item.tempInDegrees;
+
+        // Airbnb Price
+        let cellAirbnbPrice = row.insertCell();
+        cellAirbnbPrice.setAttribute('data-label', 'Airbnb Price (USD/Night)');
+        cellAirbnbPrice.className = 'col-airbnb';
+        cellAirbnbPrice.textContent = item.airbnbAveragePricePerNight;
+
+        // Country Index Used
+        let cellCountryIndexUsed = row.insertCell();
+        cellCountryIndexUsed.className = 'col-index-used';
+        cellCountryIndexUsed.setAttribute('data-label', 'Country Index Used');
+        cellCountryIndexUsed.textContent = item.isCountryCrimeIndex ? 'Yes' : 'No';
+
+        // Distance
+        let cellDistance = row.insertCell();
+        cellDistance.className = 'col-distance';
+        cellDistance.setAttribute('data-label', 'Distance (km)');
+        cellDistance.textContent = item.distance ? item.distance.toFixed(2) + ' km' : 'Not calculated';
+
+        // Estimated Airplane Ticket Price
+        let cellTicketPrice = row.insertCell();
+        cellTicketPrice.className = 'col-ticket-price';
+        cellTicketPrice.setAttribute('data-label', 'Estimated Airplane Ticket Price');
         let ticketPrice = "Not calculated";
         if (item.distance && !isNaN(item.distance)) {
             ticketPrice = calculateLogarithmicTicketPrice(item.distance).toFixed(2) + ' USD';
         }
-        row.insertCell(8).textContent = ticketPrice;
+        cellTicketPrice.textContent = ticketPrice;
     });
 }
+
 
 document.querySelectorAll('#dataTable th').forEach(header => {
     header.addEventListener('click', () => {
