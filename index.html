@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+    <meta name="description" content="Explore cities with temperatures over 25°C. Key data includes median temperature, crime index, average Airbnb price, and lowest airfare.">
+    <meta property="og:title" content="Hot Cities Explorer - Explore Warm Cities Worldwide">
+    <meta property="og:description" content="A comprehensive table of cities with temperatures over 25°C, including crime index, Airbnb prices, and flight costs.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://stato.sanctuo.com/hot_city_explorer.png">
+    <link rel="canonical" href="https://stato.sanctuo.com/">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            text-align: center;
+            line-height: 1.5; /* Improve line spacing for readability */
+        }
+        header {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        header img {
+            height: 100px;
+            margin-right: 20px;
+        }
+        header h1, header p {
+            font-size: 18px; /* Larger font size for readability */
+        }
+        .input-group {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px; /* Increased gap for touch targets */
+        }
+        .input-group {
+            margin-left: auto;
+            margin-right: auto;
+            display: table;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="text"], button {
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+            flex-grow: 1;
+            max-width: 300px;
+            font-size: 16px; /* Set base font size for readability */
+        }
+        button {
+            min-width: 48px; /* Minimum size for touch targets */
+            min-height: 48px; /* Minimum size for touch targets */
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 10px; /* Ensures there is space between clickable elements */
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%; /* Adjust for smaller screens */
+            border-collapse: collapse;
+            margin-top: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+            font-size: 16px; /* Ensure text is legible on mobile */
+        }
+        th {
+            background: rgba(255, 132, 0, 0.1);
+            color: black;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        tbody tr:hover {
+            background-color: #ddd;
+        }
+        #backToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button at the bottom of the page */
+            right: 30px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: rgba(255, 255, 255, 0.7); /* White background with opacity */
+            color: black; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+            font-size: 18px; /* Increase font size */
+        }
+        
+        #backToTopBtn:hover {
+            background-color: #ddd; /* Add a dark-grey background on hover */
+        }
+        @media (max-width: 600px) {
+            table {
+                width: 95%; /* Adjust the width for mobile screens */
+            }
+            header {
+                flex-direction: column;
+            }
+            header img {
+                margin-bottom: 10px;
+            }
+            .input-group {
+                flex-direction: column;
+            }
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr { border: 1px solid #ccc; }
+            td {
+                /* Behave like a "row" */
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%; /* Adjusted padding to center content */
+                text-align: right; /* Align the value to the right */
+            }
+            td:before {
+                /* Now like a table header */
+                position: absolute;
+                left: 10px; /* Adjusted position for the label */
+                width: 45%; /* Adjusted width for label */
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left; /* Align the label to the left */
+                content: attr(data-label); /* Fetch label from data-label attribute */
+            }
+            #backToTopBtn {
+                display: block; /* Show the button on mobile screens */
+            }
+        }
+        /* Additional styles for small screen devices */
+        @media only screen and (max-width: 600px) {
+            header h1, header p {
+                font-size: 16px; /* Increase font size for readability on mobile */
+            }
+            .input-group button, .input-group input[type="text"] {
+                font-size: 14px; /* Adjust font size for mobile */
+                padding: 15px; /* Increase padding for easier interaction */
+                margin: 5px; /* Ensure adequate space between elements */
+            }
+            th, td {
+                padding: 10px; /* Adjust padding in table cells for easier interaction */
+            }
+
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <header>
+        <img src="https://stato.sanctuo.com/hot_city_explorer.png" alt="Hot Cities Explorer Logo">
+        <div>
+            <h1>Hot Cities Explorer</h1>
+            <p>About: Ranking of cities by temperatures over 25°C including median temperature, crime index, airbnb per night and air plan price.</p>
+        </div>
+    </header>
+    <div class="input-group">
+        <input type="text" id="userCity" placeholder="Your City">
+        <input type="text" id="userCountry" placeholder="Your Country">
+        <button onclick="updateDistances()">Calculate Distances</button>
+    </div>
+    <div class="input-group">
+        <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchTable()">
+    </div>
+    <button id="backToTopBtn" title="Go to top">↑</button>
+    <table id="dataTable" class="table">
+        <thead>
+            <tr>
+                <th id="rank">Rank</th>
+                <th id="city">City</th>
+                <th id="country">Country</th>
+                <th id="crimeIndex">Crime Index</th>
+                <th id="tempInDegrees">Temperature (°C / °F)</th>
+                <th id="airbnbAveragePricePerNight">Airbnb Price (USD/Night)</th>
+                <th id="isCountryCrimeIndex">Country Index Used</th>
+                <th id="distance">Distance (km)</th>
+                <th id="airplaneTicketPrice">Estimated Airplane Ticket Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <footer>
+        <p>Data Sources: Wikipedia, Numbeo, Airbnb, Google Flights</p>
+        <p>Disclaimer: Data is for informational purposes and may not be up-to-date or accurate.</p>
+        <p>License: MIT License</p>
+        <p>Contact and Contributions: <a href="https://github.com/MarvinAmine/it-is-hot-over-there">GitHub Project Page</a></p>
+    </footer>
+    <button id="backToTopButton" onclick="scrollToTop()">↑</button>
+    <script>
+        // Get the button
+        var mybutton = document.getElementById("backToTopBtn");
+    
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+    
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.onclick = function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
