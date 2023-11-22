@@ -1,12 +1,6 @@
 # Hot Cities Explorer
 ![image](https://github.com/MarvinAmine/it-is-hot-over-there/assets/126837473/44812a2d-fbbc-4c27-9411-c131f038c8ab)
 
-## Desktop
-<img src="https://github.com/MarvinAmine/it-is-hot-over-there/assets/126837473/6e4c7ff3-8661-437f-832e-0959794d3da8" width="100%">
-
-## Mobile
-<img src="https://github.com/MarvinAmine/it-is-hot-over-there/assets/126837473/8b736eb7-d5b1-48c1-a7bb-0f823e7deca8" width="100%">
-
 ## About
 Hot Cities Explorer provides a comprehensive table of cities with temperatures over 25°C. This project showcases key data points like the median temperature, crime index, average Airbnb price, the lowest average airfare for each city.
 A ranking is also evaluated by combinating all the metrics. 
