@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature, Airbnb Price, and Crime Index Map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <style>
+        #map {
+            height: 500px;
+        }
+        #tableButton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="tableButton">See Table Mode</button>
+    <div id="map"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('https://raw.githubusercontent.com/MarvinAmine/it-is-hot-over-there/master/dataArray.json') // Update this URL to the location of your JSON file
+                .then(response => response.json())
+                .then(data => {
+                    // Filter cities with temperature above 25 degrees
+                    const hotCities = data.filter(city => {
+                        const tempParts = city.tempInDegrees.split('(');
+                        return tempParts.length > 1 && parseFloat(tempParts[0]) > 25;
+                    });
+
+                    // Initialize the map
+                    const map = L.map('map').setView([0, 0], 2); // Sets initial view of the map
+
+                    // Load and display tile layers on the map
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 19,
+                        attribution: '© OpenStreetMap contributors'
+                    }).addTo(map);
+
+                    // Add markers for each city
+                    hotCities.forEach(city => {
+                        L.marker([parseFloat(city.latitude), parseFloat(city.longitude)])
+                            .addTo(map)
+                            .bindPopup(`<strong>${city.city}, ${city.country}</strong><br>Temperature: ${city.tempInDegrees}<br>Airbnb Price/Night: $${city.airbnbAveragePricePerNight}<br>Crime Index: ${city.crimeIndex}`);
+                    });
+                })
+                .catch(error => console.error('Error fetching data: ', error));
+        });
+    </script>
+</body>
+</html>
